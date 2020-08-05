@@ -13,9 +13,8 @@ Of course, much smarter people have already found such a formula in the 18th cen
 But why does this formula work? To explain this, we'll build on another way to compute the area, namely using vectors: 
 $A = \frac{1}{2}|\vec{AB} \times \vec{AC} |$. 
 (This formula uses a nice property of the cross product. You can find explanations for it all over the internet.) 
-$\vec{AB}$ is equal to 
-$\begin{pmatrix} x_B - x_ A \\\ y_B - y_A \end{pmatrix}$
-, and similarly $\vec{AC} = \begin{pmatrix} x_C - x_A \\ y_C - y_A \end{pmatrix}$. 
+$\vec{AB} = \begin{pmatrix} x_B - x_ A \\\ y_B - y_A \end{pmatrix}$
+, and similarly $\vec{AC} = \begin{pmatrix} x_C - x_A \\\ y_C - y_A \end{pmatrix}$. 
 Now, we can apply the cross product. As the cross product only works in three dimensions, we'll add a z-coordinate and set it to 0: 
 
 $$ \begin{pmatrix} x_B - x_A \\ y_B - y_A \\ 0 \end{pmatrix} \times \begin{pmatrix} x_C - x_A \\ y_C - y_A \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ (x_B - x_A)(y_C - y_A) - (x_C - x_A)(y_B - y_A) \end{pmatrix} $$

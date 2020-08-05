@@ -8,7 +8,7 @@ The formula most people would be thinking of if they are asked to compute the ar
 While this formula is indeed very useful, there are situations where calculating the base and the height of a triangle is non-trivial. It would be quite convenient to have a formula that would compute the area of a triangle purely based on coordinates, wouldn't it? 
 Of course, much smarter people have already found such a formula in the 18th century (in fact, they found a formula that allows you to find the area for any polygon, not just triangles): $A = {\frac {1}{2}}{\big |}(x_{A}-x_{C})(y_{B}-y_{A})-(x_{A}-x_{B})(y_{C}-y_{A}){\big |}$
 
-![Visualization of the shoelace formula](assets/shoelace_formula.png)
+![Visualization of the shoelace formula](/assets/shoelace_formula.png)
 
 But why does this formula work? To explain this, we'll build on another way to compute the area, namely using vectors: 
 $A = \frac{1}{2}|\vec{AB} \times \vec{AC} |$. 

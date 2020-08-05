@@ -7,8 +7,8 @@
   {%- feed_meta -%}
 
   {% if page.katex %}
-    <link onload="this.media='all'; this.onload=null;" rel="stylesheet" href="/assets/katex/katex.min.css">
-    <script defer async src="/assets/katex/katex.min.js"></script>
-    <script defer async src="/assets/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link rel="stylesheet" href="/assets/katex/katex.min.css">
+    <script defer src="/assets/katex/katex.min.js"></script>
+    <script defer src="/assets/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
   {% endif %}
 </head>

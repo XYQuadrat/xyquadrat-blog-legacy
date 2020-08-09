@@ -1,7 +1,7 @@
 ---
 layout: page
 home-link: false
-permalink: /dnd
+permalink: /dnd/
 title: Carelor's Diary
 ---
 

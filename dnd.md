@@ -1,4 +1,11 @@
+---
+layout: page
+home-link: false
+title: Carelor's Diary
+---
+
 # People
+
 ## People in Neverwinter
 * Naut Lunenborg
 Harper in the House of a Thousand Faces
@@ -22,7 +29,7 @@ Tiefling, the right hand of Lord Neverember
 Friend of Selina Belabranta, disappeared for a week and is now very introverted
 
 ## Miscellaneous
-![Portrait of Jarlaxle](http://xyquadrat.ch/content/images/2020/05/jarlaxle.png)
+![Portrait of Jarlaxle](/assets/img/jarlaxle.png)
 * Jarlaxle Baenre
 Drow we met in Belabrantas Tipsy Woodpecker, has some sort of 'Horcrux' with a demon inside
 
@@ -34,7 +41,7 @@ Archmage, at Hosttower
 # Places
 ## Neverwinter
 
-![Map of Neverwinter](http://xyquadrat.ch/content/images/2020/05/NEVERWINTER_Cityloremap.png)
+![Map of Neverwinter](/assets/img/neverwinter_map.png)
 
 * Protector's Enclave
     * Moonstone Mask

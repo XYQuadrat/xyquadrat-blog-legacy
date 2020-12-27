@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Change of basis and coordinate transforms"
+title: "Change of basis - notation problems"
 katex: true
 tags: eth
 ---

@@ -9,7 +9,7 @@ Given a question similar to
 
 > Find all zerodivisors in the ring $\mathbb{Z}_{25}.$
 
-How do we solve this task efficiently? First, we can recall that in a finite commutative all elements are either units or zerodivisors. Now, an element $a$ of the ring is a unit if and only if $\gcd(a,m) = 1$ (in the previously mentioned example, $m$ would be 25).
+How do we solve this task efficiently? First, we can recall that in a finite commutative ring all elements are either units or zerodivisors. Now, an element $a$ of the ring is a unit if and only if $\gcd(a,m) = 1$ (in the previously mentioned example, $m$ would be 25).
 
 Therefore all elements $a$ where $\gcd(a,m) \ne 1$ are zerodivisors. Phrased differently, this means that all elements that are **not** relatively prime to $m$ are zerodivisors of $\mathbb{Z}_m$.
 

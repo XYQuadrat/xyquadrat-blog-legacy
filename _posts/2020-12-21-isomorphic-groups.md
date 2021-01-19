@@ -15,4 +15,4 @@ In our specific example, this means that we have to find a cyclic group of order
 
 Hence a simple solution to this question would be $\mathbb{Z}\_{3} \times \mathbb{Z}\_{4}$. (If you want to be more formal, also include the associated operation, so $\langle \mathbb{Z}\_{3}; \oplus \rangle \times \langle \mathbb{Z}\_{4}; \oplus \rangle$)
 
-**Practice:** If you understood this, it should now be easy for you find a group isomorphic to $\langle \mathbb{Z}\_{16}; + \rangle$ other than $\mathbb{Z}\_{16}$.
+**Practice:** If you understood this, it should now be easy for you find a group isomorphic to $\langle \mathbb{Z}\_{20}; + \rangle$ other than $\mathbb{Z}\_{20}$.

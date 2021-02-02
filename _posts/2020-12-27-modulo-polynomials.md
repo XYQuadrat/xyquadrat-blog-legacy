@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Calculate terms modulo a polynomial in algebras more efficiently"
+title: "Efficiently calculate terms modulo a polynomial"
 katex: true
 tags: eth
 ---

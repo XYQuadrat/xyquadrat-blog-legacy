@@ -1,11 +1,13 @@
 @font-face {
   font-family: "merriweatherbold";
   src: url('/assets/fonts/Merriweather-Bold.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: "merriweathersans";
   src: url('/assets/fonts/Merriweather-Sans.woff') format('woff');
+  font-display: swap;
 }
 
 /**

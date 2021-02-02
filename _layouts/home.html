@@ -21,9 +21,7 @@ layout: default
             {{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        {{ post.subtitle }}
       </li>
       {%- endfor -%}
     </ul>

@@ -280,11 +280,11 @@ table {
 }
 
 /**
- * Footer line
+ * Half line
 */
 
-.footer-line {
-  margin: 0px auto 30px;
-  color: #ccc9;
-  max-width: calc(#{$content-width} + (#{$spacing-unit} * 2));
+.half-line {
+  margin: 0px auto;
+  color: $grey-color-light;
+  width: calc(#{$content-width} + (#{$spacing-unit} * 2));
 }

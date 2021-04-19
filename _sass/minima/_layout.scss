@@ -3,8 +3,9 @@
  */
 .site-header {
   border-top: 5px solid $brand-color;
-  border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.25;
+  text-align: center;
+  padding: 10px 0px;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -16,7 +17,6 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
 
   &,
   &:visited {
@@ -106,7 +106,7 @@
  * Site footer
  */
 .site-footer {
-  padding: 0;
+  padding: 30px 0 20px;
   font-weight: 300;
 }
 

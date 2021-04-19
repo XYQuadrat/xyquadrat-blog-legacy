@@ -106,7 +106,7 @@
  * Site footer
  */
 .site-footer {
-  padding: $spacing-unit 0;
+  padding: 0;
   font-weight: 300;
 }
 
@@ -192,10 +192,6 @@
 .post-list {
   margin-left: 0;
   list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
 }
 
 .post-meta {

@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2; 
 }
 
 
@@ -277,4 +277,14 @@ table {
 .spoiler :hover {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   color: #111;
+}
+
+/**
+ * Footer line
+*/
+
+.footer-line {
+  margin: 0px auto 30px;
+  color: #ccc9;
+  max-width: calc(#{$content-width} + (#{$spacing-unit} * 2));
 }

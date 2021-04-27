@@ -8,7 +8,7 @@ A good font choice is essential to a good-looking website. xyquadrat.ch surely w
 
 ![Screenshot of xyquadrat.ch with Comic Sans](/assets/img/polyring_comic_sans.png)
 
-It... really doesn't.
+It... really doesn't fit.
 
 # Actually, it's pretty easy.
 

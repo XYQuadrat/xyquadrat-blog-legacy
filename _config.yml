@@ -18,6 +18,8 @@ tagline: "Home"
 
 # Build settings
 theme: minima
+minima:
+    date_format: '%d. %B %Y'
 plugins:
   - jekyll-feed
 

@@ -14,6 +14,12 @@ var denominator = document.getElementById('denominator');
 // how thick you want a segment
 var segmentDepth = 240;
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('numerator').addEventListener('change', drawFraction);
+    document.getElementById('denominator').addEventListener('change', drawFraction)
+})
+
 function drawFraction() {
     context.clearRect(0,0, canvas.width, canvas.height)
     drawSegments(segmentDepth); 

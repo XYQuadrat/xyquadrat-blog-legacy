@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fractions Generator</title>
+    <link rel="stylesheet" href="fractions.css">
 </head>
 <body>
     
-<p>Numerator: </p><input type="number" id="numerator" minvalue=0 value=3>
-<p>Denominator: </p> <input type="number" id="denominator" minvalue=2 value=5>
+<p>Numerator: </p><input type="number" id="numerator" min=0 value=3>
+<p>Denominator: </p> <input type="number" id="denominator" min=2 value=5>
 <hr>
-<canvas id="myCanvas" width="500" height="500"></canvas>
+<canvas id="circleCanvas" width="500" height="500"></canvas>
+<a href='' id="downloadCircleImg" download="FractionAsCircle.jpg">Download as image</a>
+<canvas id="rectCanvas" width="500" height="500"></canvas>
+<a href='' id="downloadRectImg" download="FractionAsRectangle.jpg">Download as image</a>
+
 
 <script src="fractions.js"></script>
 </body>

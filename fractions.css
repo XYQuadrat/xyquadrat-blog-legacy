@@ -1,7 +1,30 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem;
 }
 
-div {
-    display: inline-block;
+canvas {
+    display: block;
+    margin: 1rem 0px;
+}
+
+a {
+    background-color: rgb(33, 150, 243);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    background-color: rgb(25, 118, 210);
+    text-decoration: underline;
+    transition: 100ms;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }

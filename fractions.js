@@ -13,7 +13,7 @@ var numerator = document.getElementById('numerator');
 var denominator = document.getElementById('denominator');
 
 // how thick you want a segment
-var circleRadius = 240;
+var circleRadius = circleCanvas.width / 2.25;
 
 document.addEventListener('DOMContentLoaded', function () {
     numerator.addEventListener('change', drawFraction);

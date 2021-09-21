@@ -61,7 +61,7 @@ For those that don't know, GESS stands for "Geistes-, Sozial-, und Staatswissens
 * MeteoSwiss - Generally regarded as one of the best weather apps in Switzerland.
 * Swisstopo - The absolute best maps for Switzerland if you want to go hiking, fly drones or just find out where something is. 
 * TooGoodToGo - Want cheap good food? This is an app where you can buy leftovers from restaurants at a very reduced price.
-* PubliBike - Rent bikes temporarily for a low price. ![ETH also offers a special deal](https://ethz.ch/studierende/de/campus/transport-mobilitaet/velo.html) that gives you a year-long subscription for 70CHF where you can use the bikes to ride up to 30 minutes for free.
+* PubliBike - Rent bikes temporarily for a low price. [ETH also offers a special deal](https://ethz.ch/studierende/de/campus/transport-mobilitaet/velo.html) that gives you a year-long subscription for 70CHF where you can use the bikes to ride up to 30 minutes for free.
 
 ### I saw ETH also has a few apps. What are those for?
 

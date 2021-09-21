@@ -52,7 +52,7 @@ For those that don't know, GESS stands for "Geistes-, Sozial-, und Staatswissens
 - **Digital Design and Computer Architecture:** Explore how a computer works under the hood and what hardware engineers do to make it go faster. You will also program an FPGA in the labs which will be part of your final grade. The professor, Onur Mutlu, calls this a "high-bandwidth lecture", and he's certainly not wrong.
 
 ### I'm a foreign student. Do you have recommendation on must-have apps in Switzerland/Zurich?
-(Most of the next two sections was contributed by Lukas. Thanks!)
+(Most of the next two sections was contributed by Lukas, and some more apps were suggested by Fabian. Thanks!)
 
 * SBB Mobile - The main app for public transport in Switzerland.
 * Covid Certificate - You can save & show your covid certificate here.
@@ -60,6 +60,8 @@ For those that don't know, GESS stands for "Geistes-, Sozial-, und Staatswissens
 * AlertSwiss - Can send you warnings and other civil protection-related news.
 * MeteoSwiss - Generally regarded as one of the best weather apps in Switzerland.
 * Swisstopo - The absolute best maps for Switzerland if you want to go hiking, fly drones or just find out where something is. 
+* TooGoodToGo - Want cheap good food? This is an app where you can buy leftovers from restaurants at a very reduced price.
+* PubliBike - Rent bikes temporarily for a low price. ![ETH also offers a special deal](https://ethz.ch/studierende/de/campus/transport-mobilitaet/velo.html) that gives you a year-long subscription for 70CHF where you can use the bikes to ride up to 30 minutes for free.
 
 ### I saw ETH also has a few apps. What are those for?
 

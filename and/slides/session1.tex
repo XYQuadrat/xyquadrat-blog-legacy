@@ -1,0 +1,107 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme[titleformat=smallcaps, block=fill]{metropolis}
+
+\usepackage[ngerman]{babel}
+\usepackage{booktabs}
+
+\usepackage{amsmath}
+\usepackage[mathrm=sym]{unicode-math}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotsthemetol}
+\pgfplotsset{compat=newest}
+
+\setmathfont{Fira Math}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=,urlcolor=blue}
+
+\title{Algorithmen \& Datenstrukturen \\ Woche 1}
+\date{27. September 2021}
+\author{Julian Steinmann}
+\institute{ETH Zürich}
+
+\begin{document}
+  \maketitle
+  \section{Organisatorisches}
+  \begin{frame}{Kontakt}
+    \begin{itemize}
+      \item In Übungsstunde
+      \item Mail: \href{mailto:jsteinmann@student.ethz.ch}{jsteinmann@student.ethz.ch}
+      \item Discord: \url{@Julian / xyquadrat [A&D]}
+    \end{itemize}
+    Ausserdem: Alle Slides und andere Materialien auf \href{https://xyquadrat.ch/and}{https://xyquadrat.ch/and} verfügbar.
+  \end{frame}
+  \begin{frame}{Bonusaufgaben}
+    \begin{itemize}
+      \item Wöchentlich Sheet mit Bonusaufgaben und optionalen Challenge-Aufgaben (markiert mit *)
+      \item In zufälligen Zweiergruppen lösen (wechseln alle 3 Wochen)
+      \item Verteilung der Bonuspunkte
+      \begin{itemize}
+        \item 3 für Bonusaufgaben
+        \item 1 für Peer Grading
+        \item 4 für Programmieraufgaben (erst später)
+      \end{itemize}
+      \item 80\% aller Bonuspunkte \(\rightarrow\) +0.25 in Prüfung
+      \item Abgabe bis zu Beginn der Stunde, am Besten auf Papier \textit{und} digital
+    \end{itemize}
+  \end{frame}
+  \begin{frame}{Peer Grading}
+    Grundsätzlich: von 11:15 - 12:00. Meist früher fertig. \\
+    Aber: Abgabefrist ist Montag, 23:59 falls nötig.
+  \end{frame}
+  \begin{frame}{Schwierigkeit von A\&D}
+    \begin{center}
+    \begin{tabular}{lrr}
+      \toprule
+      & HS19 & HS20 \\
+      \midrule
+      Diskrete Mathematik & 3.88 & 3.72 \\
+      Einführung in die Programmierung & 4.31 & 4.24 \\
+      Lineare Algebra & 4.27 & 4.09 \\
+      \textbf{Algorithmen und Datenstrukturen} & 4.16 & 4.19 \\
+      \bottomrule
+    \end{tabular}
+    \end{center}
+  \end{frame}
+  \section{Induktion}
+  \begin{frame}{Was ist Induktion?}
+    Induktion ist eine Art, Aussagen zu beweisen, beispielsweise \[\sum_{k=1}^n n = \frac{n(n+1)}{2}\] Wir benötigen zwei Dinge, um Induktion anzuwenden:
+    \begin{enumerate}
+      \item Die Aussage muss für einen Basisfall stimmen. (Oft \(n=0\) oder \(n=1\))
+      \item Wenn die Aussage für einen Fall \(n\) stimmt, dann muss sie auch für den nächsten Fall stimmen (Oft \(n+1\) oder \(2\times n\))
+    \end{enumerate}
+  \end{frame}
+  \section{Asymptotisches Wachstum}
+  \begin{frame}{Kleine Eingaben}
+    \begin{center}
+      \begin{tikzpicture}
+        \begin{axis}[xmin=0,xmax=100,ymin=0,ymax=1000,samples=50,grid=major,xlabel={Eingabegrösse},ylabel={Operationen},mlineplot]
+        \addplot[TolDarkBlue, thick, domain=0:100]{0.05*x*x};
+        \addplot[TolLightRed, thick, domain=0:100]{x*log2(x)};
+        
+        \legend{
+          \(0.5x^2\),
+          \(x \log x\)
+        }
+        \end{axis}
+      \end{tikzpicture}
+    \end{center}
+  \end{frame}
+  \begin{frame}{Grosse Eingaben}
+    \begin{center}
+      \begin{tikzpicture}
+        \begin{axis}[xmin=0,xmax=1000,ymin=0,ymax=100000,samples=50,grid=major,xlabel={Eingabegrösse},ylabel={Operationen},mlineplot]
+        \addplot[TolDarkBlue, thick, domain=0:1000]{0.05*x*x};
+        \addplot[TolLightRed, thick, domain=0:1000]{x*log2(x)};
+        
+        \legend{
+          \(0.5x^2\),
+          \(x \log x\)
+        }
+        \end{axis}
+      \end{tikzpicture}
+    \end{center}
+  \end{frame}
+\end{document}

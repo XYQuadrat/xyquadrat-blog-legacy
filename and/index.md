@@ -7,4 +7,4 @@ title: Algorithmen & Datenstrukturen - Ressourcen
 
 Themen: Einführung, Induktion, Asymptotisches Wachstum
 
-* [Slides](slides/session1.pdf) ([LaTeX-Quelldatei](slides/session1.tex))
+* [Slides](/and/slides/session1.pdf) ([LaTeX-Quelldatei](/and/slides/session1.tex))

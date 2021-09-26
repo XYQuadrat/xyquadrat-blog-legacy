@@ -288,3 +288,7 @@ table {
   color: $grey-color-light;
   width: calc(#{$content-width} + (#{$spacing-unit} * 2));
 }
+
+.katex {
+  padding-left: 0.1rem;
+}

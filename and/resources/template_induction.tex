@@ -1,0 +1,116 @@
+\documentclass[a4paper,10pt]{article}
+
+%------------------
+%	FORMATTING
+%------------------
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\voffset}{-15pt}
+
+%------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------
+
+\usepackage[a4paper, margin=2.5cm]{geometry} % Sets margin to 2.5cm for A4 Paper
+\usepackage[onehalfspacing]{setspace} % Sets Spacing to 1.5
+
+\usepackage[T1]{fontenc} % Use European encoding
+\usepackage[utf8]{inputenc} % Use UTF-8 encoding
+\usepackage{charter} % Use the Charter font
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english, ngerman]{babel} % Language hyphenation and typographical rules
+
+\usepackage{amsthm, mathtools, amssymb} % Mathematical typesetting
+\usepackage{marvosym, wasysym} % More symbols
+\usepackage{float} % Improved interface for floating objects
+\usepackage[final, colorlinks = true, 
+linkcolor = black, 
+citecolor = black,
+urlcolor = black]{hyperref} % For hyperlinks in the PDF
+\usepackage{graphicx, multicol} % Enhanced support for graphics
+\usepackage{xcolor} % Driver-independent color extensions
+\usepackage{listings} % Environment for non-formatted code
+\usepackage{pseudocode} % Environment for specifying algorithms in a natural way
+\usepackage{booktabs} % Enhances quality of tables
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesubsection{\alph{subsection})} % Alphabetic numerals for subsections
+\titleformat{\subsection}[runin]{\large}{\thesubsection}{1em}{}
+\renewcommand\thesubsubsection{\roman{subsubsection}.} % Roman numbering for subsubsections
+\titleformat{\subsubsection}[runin]{\large}{\thesubsubsection}{1em}{}
+
+% DATES
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+
+% HEADER & FOOTER
+\usepackage{fancyhdr} 
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{}\renewcommand{\headrulewidth}{0pt} % Blank out the default header
+\fancyfoot[L]{\textsc{}} % Custom footer text
+\fancyfoot[C]{} % Custom footer text
+\fancyfoot[R]{\thepage} % Custom footer text
+
+\newcommand{\currentSeries}{}
+
+\begin{document}
+  
+  \title{template_assignment} % Article title
+  \fancyhead[C]{}
+  \begin{minipage}{0.295\textwidth} % Left title
+    \raggedright
+    A\&D \\ % lecture
+    \footnotesize 
+    Julian Steinmann 
+    \medskip\hrule
+  \end{minipage}
+  \begin{minipage}{0.4\textwidth} % Center title
+    \centering 
+    \large
+    Template for Induction 
+    \normalsize
+  \end{minipage}
+  \begin{minipage}{0.295\textwidth} % Right title 
+    \raggedleft
+    27.09.2021 \\ 
+    \footnotesize 
+    Week 1
+    \medskip\hrule
+  \end{minipage}
+  
+  \section*{Example Statement}
+  \[\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}\]
+  holds for any positive integer \(n\). The ``for any positive integer'' part could also be written as \(\forall n > 0\).
+  \section{Base Case (\texorpdfstring{\(n=1\)}{})}
+  The smallest positive integer is \(1\), so we prove the statement for \(n=1\) as a base case to build upon.
+  \[\sum_{i=1}^{1} i^2 = 1 = \frac{1 \cdot (1+1) \cdot (2+1)}{6}\]
+  \section{Induction Hypothesis}
+  We assume the statement holds for some positive integer \(k\):
+  \[\sum_{i=1}^k i^2 = \frac{k(k+1)(2k+1)}{6}\]
+  We can now use this statement to help us prove the Inductive Step.
+  \section{Inductive Step (\texorpdfstring{\(k \to k+1\)}{})}
+  We now show that if the property holds for \(k\), it also holds for \(k+1\).
+  We start with the left hand side of the statement with \(k+1\) substituted in. Our goal is to transform the term into the right hand side of the statement, again with \(k+1\) substituted in. Do not try to treat this as an equation. Don't forget to show where you use the Induction Hypothesis (e.g. with ``I.H.'').
+  \begin{align*}
+    \sum_{i=1}^{k+1}i^2 &= \sum_{i=1}^{k} i^2 + (k+1)^2 \\
+    &\stackrel{\mathclap{\text{\tiny\color{red} I.H.}}}{=} \frac{k(k+1)(2k+1)}{6} + (k+1)^2 \\
+    &=\frac{k(k+1)(2k+1) + 6(k+1)^2}{6} \\
+    &=\frac{(k+1)(2k^2 + 7k + 6)}{6} \\
+    &=\frac{(k+1)(k+2)(2k+3)}{6} \\
+    % ugly hack to make the braces go around the = and still align the =
+    \left(\vphantom{\frac{1}{1}}\right. &= \left. \frac{(k+1)((k+1) + 1)(2(k+1) + 1}{6} \right) \qed\\
+  \end{align*}
+  \section{Summary Sentence}
+  ``By the principle of mathematical induction, this is true for any positive integer \(n\).'' This sentence is optional (I've not heard that somebody got points deducted for omitting it), but it is good practice to include it for a complete proof.
+  \section*{Remarks}
+  \begin{itemize}
+      \item This is not the only way to do an induction proof. But it is a way to make sure that you don't get points deducted for missing steps at the exam.
+      \item The Base Case can differ from exercise to exercise.
+      \item The Inductive Step could also be from \(k \to 2 \cdot k\) or something similar. Adjust the substitution accordingly, everything else stays the same.
+      \item You'll have to prove statements with \(\ge\) or \(\le\) instead of \(=\). The process is the same for those.
+  \end{itemize}
+
+  \bigskip
+\end{document}

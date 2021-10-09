@@ -1,0 +1,53 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme[titleformat=smallcaps, block=fill]{metropolis}
+
+\usepackage[ngerman]{babel}
+\usepackage{booktabs}
+
+\usepackage{amsmath}
+\usepackage[mathrm=sym]{unicode-math}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotsthemetol}
+\pgfplotsset{compat=newest}
+
+\setmathfont{Fira Math}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=,urlcolor=blue}
+
+\title{Algorithmen \& Datenstrukturen \\ Woche 2}
+\date{4. Oktober 2021}
+\author{Julian Steinmann}
+\institute{ETH Zürich}
+
+\begin{document}
+    \maketitle
+    \section{\texorpdfstring{Big \(\mathcal{O}\)-Notation}{Big O-Notation}}
+    \begin{frame}{Definition}
+       Die Big \(\mathcal{O}\)-Notation ist eine Notation, welche wir verwenden, um das asymptotische Wachstum (also das Verhalten bei grossen Eingaben) auszudrücken. \\ \vspace*{0.5cm}
+       Wir sagen \(f \in \mathcal{O}(g)\) (oder, häufiger: \(f \le \mathcal{O}(g)\)) wenn die Funktion \(f\) nicht wesentlich schneller (d.h. bis auf eine Konstante) als \(g\) wächst.
+    \end{frame}
+    \begin{frame}{Beispiele}
+        \begin{align*}
+            5n & \le \mathcal{O}(n) \\
+            n & \le \mathcal{O}(n^2) \\
+            n^2 & \nleq \mathcal{O}(n) \\
+            10n + 10(n \log n) & \le \mathcal{O}(n \log n) \\
+            10^{10} & \le \mathcal{O}(\sqrt{n}) \\
+            n^{100} & \le \mathcal{2^n}
+        \end{align*}
+    \end{frame}
+    \begin{frame}{Landau-Notation?}
+        Die Big \(\mathcal{O}\)-Notation ist eine von mehreren Notationen, welche wir unter dem Begriff ``Landau-Notation'' oder ``asymptotische Notation'' zusammenfassen.\\ \vspace*{0.5cm}
+        Wir werden andere Teile der Landau-Notation in Zukunft noch sehen.
+    \end{frame}
+    \section{Lower Bound von Summen}
+    \begin{frame}{Lower Bound}
+        Bis jetzt haben wir generell Upper Bounds angeschaut. Wir wollen aber auch sagen können, dass eine Funktion \textit{mindestens} so schnell wie eine andere Funktion wächst. (Dies drücken wir später mit \(f \le \Omega(g)\) aus.)
+    \end{frame}
+    \begin{frame}[standout]
+        Beispiel für Lower Bound bei Summen
+    \end{frame}
+\end{document}

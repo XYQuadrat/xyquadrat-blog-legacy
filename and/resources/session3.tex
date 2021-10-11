@@ -1,0 +1,100 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme[titleformat=smallcaps, block=fill]{metropolis}
+
+\usepackage[ngerman]{babel}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+\usepackage[mathrm=sym]{unicode-math}
+\setmathfont{Fira Math}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotsthemetol}
+\pgfplotsset{compat=newest}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=,urlcolor=blue}
+
+\title{Algorithmen \& Datenstrukturen \\ Woche 3}
+\date{11. Oktober 2021}
+\author{Julian Steinmann}
+\institute{ETH Zürich}
+
+\begin{document}
+    \maketitle
+
+    \section{maxsubarraysum}
+    \begin{frame}{Ideen}
+        \begin{itemize}
+            \item Precomputing (Präfixsummen)
+            \item Divide-and-Conquer
+            \item Sich Resultate merken
+        \end{itemize}
+    \end{frame}
+    \begin{frame}{Precomputing (Präfixsummen)}
+        \begin{center}
+            \begin{tabular}{l*{6}{c}}
+                \toprule
+                \texttt{i} & 0 & 1 & 2 & 3 & 4 & 5 \\
+                \midrule
+                \texttt{array[i]} & 1 & 6 & -4 & 2 & 5 & 1\\
+                \bottomrule
+            \end{tabular}
+        \end{center}
+        Wir wollen viele (z.B. \(q\)) Summen von Subarrays möglichst effizient 
+        berechnen. Wie lange dauert die naive Version (in \(\mathcal{O}\)-Notation)? \pause
+        \[\rightarrow \mathcal{O}(nq)\]
+    \end{frame}
+    \begin{frame}{Precomputing (Präfixsummen)}
+        \begin{center}
+            \begin{tabular}{l*{6}{c}}
+                \toprule
+                \texttt{i} & 0 & 1 & 2 & 3 & 4 & 5 \\
+                \midrule
+                \texttt{array[i]} & 1 & 6 & -4 & 2 & 5 & 1 \\
+                \texttt{pre[i]} & 1 & 7 & 3 & 5 & 10 & 11 \\
+                \bottomrule
+            \end{tabular}
+        \end{center}
+        Wie lange dauert es, \texttt{pre} zu berechnen?
+        \pause \[\rightarrow \mathcal{O}(n)\]
+        Wie lange dauert es nun \(q\) Summen von Subarrays zu berechnen?
+        \pause \[\rightarrow \mathcal{O}(n + q)\]
+    \end{frame}
+    \begin{frame}{Divide-and-Conquer}
+        Probleme in Subprobleme aufzuteilen kann das Problem einfacher lösbar machen. Divide-and-Conquer ist an sehr vielen Stellen anzutreffen.
+    \end{frame}
+    \begin{frame}{Sich Resultate merken}
+        Bei vielen Divide-and-Conquer-Problemen entstehen Zwischenresultate, welche wir uns sinnvollerweise merken. Dadurch müssen wir sie nicht mehrmals berechnen, sondern können sie wiederverwenden. Wir werden dies später im Semester konkreter sehen (\(\rightarrow\) \textit{Dynamische Programmierung}).
+    \end{frame}
+    \begin{frame}{MSS - Kadane's Algorithmus}
+        Wir schauen uns nur ein Subproblem an: Was ist das Subarray mit der grössten Summe, welches bei Position \(i\) aufhört? \\
+        Weshalb ist dies ein ``gutes'' Subproblem? \pause \(\rightarrow\) Gute Subprobleme sind einfacher lösbar und erlauben, die ursprüngliche Lösung wieder zusammenzusetzen.
+    \end{frame}
+    \begin{frame}{MSS - Kadane's Algorithmus}
+        \begin{center}
+            \includegraphics[height=\textheight]{kadane.png}
+        \end{center}
+    \end{frame}
+    \section{\texorpdfstring{\(\mathcal{O}\)-Notation in der Praxis}{O-Notation in der Praxis}}
+    \begin{frame}{Laufzeit}
+        Für einen Input von \(n = 5000\) erhalten wir folgende Resultate:
+        \begin{center}
+            \begin{tabular}{lll}
+                \toprule 
+                & Komplexität & Zeit in ms \\
+                \midrule
+                Naiv & \(\mathcal{O}(n^3)\) & 52'600 \\
+                Divide-and-Conquer & \(\mathcal{O}(n \log n)\) & 17.3 \\
+                Kadane & \(\mathcal{O}(n)\) & 2.5 \\
+                \bottomrule
+            \end{tabular}
+        \end{center}
+        \(\rightarrow\) \(\mathcal{O}\)-Notation nicht exakt, aber trotzdem aussagekräftig\vfill
+
+        (Implementation in Python, Resultate von David Zollikofer)
+    \end{frame}
+\end{document}

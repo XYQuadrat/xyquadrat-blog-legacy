@@ -4,7 +4,7 @@ title: Announcing the Polyring Blogging Challenge
 tags: polyring
 ---
 
-![Polyring banner](/assets/img/polyring_banner.png)
+![Polyring banner]({{ '/assets/img/polyring_banner.png' | resize: '1034x500>' | relative_url }})
 
 Fellow Polyring members: Do you have a blog, but you only have two or three posts? Do you, like me, write something only once every month or so? Would you like to blog more, but just haven't gotten around to it? Then maybe you should join the new Polyring Blogging Challenge! Throughout the coming semester at ETH, your challenge is to make at least **10** blog posts in the **14** weeks of the semester. And, of course, if you do so, you get a fancy prize.
 

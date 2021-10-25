@@ -22,3 +22,7 @@ Themen: O-Notation, Pasture Break, Summentrick
 Themen: maxsubarraysum, O-Notation in der Praxis
 
 * [Slides](/and/resources/session3.pdf) ([LaTeX-Quelldatei](/and/resources/session3.tex))
+
+## Woche 5
+
+* [Beweis, weshalb 'Searching in Nice Matrices' nur in O(n) geht](https://stackoverflow.com/questions/2457792/how-do-i-search-for-a-number-in-a-2d-array-sorted-left-to-right-and-top-to-botto/2458113#2458113)

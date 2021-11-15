@@ -32,3 +32,8 @@ Websiten, um DP zu üben:
 * [cses.fi/problemset](https://cses.fi/problemset)
 * [SPOJ](https://spoj.com)
 * [Codeforces](https://codeforces.com)
+
+## Kahoots
+
+[Midterm Kahoot](https://create.kahoot.it/share/a-d-midterm-kahoot/1739182e-79a4-4720-9dcf-41e55e426e24)  
+[Kahoot Woche 8 (Graphentheorie Einführung)](https://create.kahoot.it/share/a-d-woche-8/8f312e5c-3748-4061-a6cf-54303dc3800e)

@@ -33,6 +33,10 @@ Websiten, um DP zu üben:
 * [SPOJ](https://spoj.com)
 * [Codeforces](https://codeforces.com)
 
+# Woche 9
+* [AVL-Tree-Visualisierung](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
+* [Graph Terminology Cheatsheet](https://github.com/XYQuadrat/eth-cheatsheets/releases)
+
 ## Kahoots
 
 [Midterm Kahoot](https://create.kahoot.it/share/a-d-midterm-kahoot/1739182e-79a4-4720-9dcf-41e55e426e24)  

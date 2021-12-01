@@ -6,7 +6,8 @@ body {
 
 canvas {
     display: block;
-    margin: 1rem 0px;
+    margin: 0.5rem 0px;
+    width: 100%;
 }
 
 a {
@@ -19,7 +20,7 @@ a {
 }
 
 a:hover {
-    background-color: rgb(25, 118, 210);
+    background-color: rgb(12, 58, 104);
     text-decoration: underline;
     transition: 100ms;
 }
@@ -35,13 +36,13 @@ h4 {
     justify-content: center;
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 800px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (min-width: 1520px) {
+@media (min-width: 1200px) {
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr;
     }

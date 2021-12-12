@@ -39,6 +39,6 @@ Websiten, um DP zu üben:
 
 ## Kahoots
 
-[Midterm Kahoot](https://create.kahoot.it/share/a-d-midterm-kahoot/1739182e-79a4-4720-9dcf-41e55e426e24)  
-[Kahoot Woche 8 (Graphentheorie Einführung)](https://create.kahoot.it/share/a-d-woche-8/8f312e5c-3748-4061-a6cf-54303dc3800e)
-[Kahoot Woche 10](https://create.kahoot.it/share/a-d-woche-10/cc6ac333-5918-4e44-b403-06f9eafd0331)
+* [Midterm Kahoot](https://create.kahoot.it/share/a-d-midterm-kahoot/1739182e-79a4-4720-9dcf-41e55e426e24)  
+* [Kahoot Woche 8 (Graphentheorie Einführung)](https://create.kahoot.it/share/a-d-woche-8/8f312e5c-3748-4061-a6cf-54303dc3800e)  
+* [Kahoot Woche 10](https://create.kahoot.it/share/a-d-woche-10/cc6ac333-5918-4e44-b403-06f9eafd0331)  

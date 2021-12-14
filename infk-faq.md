@@ -69,6 +69,10 @@ For those that don't know, GESS stands for "Geistes-, Sozial-, und Staatswissens
 * ETH Zurich - Used for checking the Mensa menu, primarily. Also has a campus map and a general ETH news feed.
 * ASVZ - If you want to view and enroll in sports offerings from ASVZ, this is the app to do it.
 
+### In Algorithms & Datastructures: The tests on Code Expert pass, but when I submit I get "Wrong Answer". Why?
+
+Passing local test cases (these get run when you click the bottle) is not the same as getting full points when submitting. When you submit, your code is tested with hidden test cases, which are much more extensive than the local test cases and potentially include edge cases the local ones don't.
+
 ### I feel really overwhelmed, I'm in a bad spot mentally or I just don't know how to handle the load. What to do?
 
 It's super important that you get help. You don't have to and shouldn't go through a difficult time alone. ETH offers various ways to support you. One great option is the [Nightline](https://www.nightline.ch). You can call or chat with them most of the time throughout the week, and it's fully anonymous. They aren't professionals though. If you feel professional help is needed, do not hesitate to contact the [Psychologische Beratungsstelle](https://www.pbs.uzh.ch/de.html). There are also further options listed on [this page](https://ethz.ch/studierende/de/beratung/studium-und-gesundheit/kontakte-gesundheit.html). Again, please take care of yourself and do not wait for too long until you seek external help & advice.

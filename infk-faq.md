@@ -40,7 +40,7 @@ For those that don't know, GESS stands for "Geistes-, Sozial-, und Staatswissens
 *1. Semester*
 
 - **Introduction to Programming:** You learn how to program in Java, including how object-oriented programming works. This most likely also includes drawing a swiss flag, something called "EBNF" and a guessing game that you can spend hours on optimizing.
-- **Discrete Mathematics:** You learn how to prove stuff, why it is impossible to write a program that detects all malware, what rings and fields in mathematics are and how some applications of those (RSA, Error correcting codes). Throughout the course you will sometimes hear about the ominous "Chapter 6" which, once you get to it, turns out to be not very ominous at all.
+- **Discrete Mathematics:** You learn how to prove stuff, why it is impossible to write a program that detects all malware, what rings and fields in mathematics are and how some applications of those (RSA, Error correcting codes) work. Throughout the course you will sometimes hear about the ominous "Chapter 6" which, once you get to it, turns out to be not very ominous at all.
 - **Linear Algebra:** You learn about matrices and how to use them to solve systems of linear equations. Sounds straightforward, but it turns out there are many different approaches on how to do this efficiently.
 - **Algorithms & Datastructures:** You learn how to design programs and datastructures that can solve problems efficiently, ranging from sorting over searching to graph problems. Likely includes tips on [how to steal stuff as efficiently as possible](https://en.wikipedia.org/wiki/Knapsack_problem).
 

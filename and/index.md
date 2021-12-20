@@ -3,6 +3,8 @@ layout: page
 title: Algorithmen & Datenstrukturen - Ressourcen
 ---
 
+Implementierung der meisten kursrelevanten Algorithmen: [github.com/XYQuadrat/and-algorithms](https://github.com/XYQuadrat/and-algorithms)
+
 ## Woche 1
 
 Themen: Einführung, Induktion, Asymptotisches Wachstum
